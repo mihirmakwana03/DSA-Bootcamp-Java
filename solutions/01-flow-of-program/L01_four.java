@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class four {
+public class L01_four {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
