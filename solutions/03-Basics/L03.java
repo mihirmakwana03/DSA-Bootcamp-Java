@@ -1,7 +1,10 @@
 //3. Area Of Rectangle Program 
 
+import java.util.Scanner;
+
+
 import java.util.*;
-public class L03_3 {
+public class L03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
