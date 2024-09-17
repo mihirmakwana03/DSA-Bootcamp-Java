@@ -12,19 +12,24 @@ public class L13_4 {
 		int b = sc.nextInt();
 
 		isPalindrome(a, b);
+		sc.close(); 
 	}
 
-	static boolean isPalindrome(int a, int b) {
+	static void isPalindrome(int a, int b) { 
 		for (int i = a; i <= b; i++) {
-			int original = n;
+			int original = i; 
 			int reversed = 0;
 
-			while(n!=0){
-				int rem = n%10;
-				reversed = reversed*10+rem;
-				n/=10;
+			int temp = i; 
+			while(temp != 0){ 
+				int rem = temp % 10;
+				reversed = reversed * 10 + rem;
+				temp /= 10;
 			}
-			return original==reversed;
+
+			if (original == reversed) { 
+				System.out.println(original + " is a palindrome.");
+			}
 		}
 	}
 }
